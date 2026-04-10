@@ -22,7 +22,7 @@ export default function DocsPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/60 bg-[#0a0e17]/90 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           <Link
-            href="/"
+            href="/transmute"
             className="text-lg font-semibold tracking-tight text-white hover:text-slate-300 transition-colors"
           >
             Transmute
@@ -78,7 +78,7 @@ export default function DocsPage() {
           {/* Header */}
           <div className="mb-12 pb-8 border-b border-slate-800">
             <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
-              <Link href="/" className="hover:text-slate-300 transition-colors">
+              <Link href="/transmute" className="hover:text-slate-300 transition-colors">
                 transmute
               </Link>
               <span>/</span>
@@ -430,7 +430,7 @@ EF Core configuration.`}
                 Ask a Question
               </a>
               <Link
-                href="/#pricing"
+                href="/transmute#pricing"
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white font-medium px-6 py-2.5 text-sm transition-colors"
               >
                 View Pricing
@@ -448,11 +448,18 @@ EF Core configuration.`}
               href="/"
               className="font-semibold text-slate-400 hover:text-slate-300 transition-colors"
             >
+              Foundry Familiars
+            </Link>
+            <span>·</span>
+            <Link
+              href="/transmute"
+              className="font-semibold text-slate-400 hover:text-slate-300 transition-colors"
+            >
               Transmute
             </Link>
             <span>·</span>
             <span>
-              Transmute is a product of{" "}
+              A product of{" "}
               <a
                 href="https://spookysoftwaresyndicate.com"
                 target="_blank"
@@ -469,6 +476,18 @@ EF Core configuration.`}
               className="hover:text-slate-300 transition-colors"
             >
               Documentation
+            </Link>
+            <Link
+              href="/transmute/terms"
+              className="hover:text-slate-300 transition-colors"
+            >
+              Terms
+            </Link>
+            <Link
+              href="/transmute/privacy"
+              className="hover:text-slate-300 transition-colors"
+            >
+              Privacy
             </Link>
             <a
               href="mailto:ghostfoundrysyndicate@outlook.com"
