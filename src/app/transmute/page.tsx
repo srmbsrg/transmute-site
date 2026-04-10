@@ -86,7 +86,9 @@ export default function TransmutePage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
+                href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 text-sm transition-colors"
               >
                 Book Discovery Sprint
@@ -313,29 +315,14 @@ export default function TransmutePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
               {/* The Assay */}
-              <a
-                href="https://spookysoftwaresyndicate.com/the-assay"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/the-assay"
                 className="group rounded-xl border border-slate-800 bg-slate-900/30 p-6 hover:border-slate-700 hover:bg-slate-900/50 transition-all"
               >
-                <div className="flex items-start justify-between mb-3">
+                <div className="mb-3">
                   <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
                     The Assay
                   </span>
-                  <svg
-                    className="h-4 w-4 text-slate-600 group-hover:text-slate-400 transition-colors flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                    />
-                  </svg>
                 </div>
                 <p className="text-sm text-slate-300 font-medium mb-1">
                   Not sure if your stack is AI-ready? Run a free scan.
@@ -343,32 +330,17 @@ export default function TransmutePage() {
                 <p className="text-xs text-slate-500">
                   Free, instant, no account required.
                 </p>
-              </a>
+              </Link>
 
               {/* The Crucible */}
-              <a
-                href="https://spookysoftwaresyndicate.com/the-crucible"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/the-crucible"
                 className="group rounded-xl border border-slate-800 bg-slate-900/30 p-6 hover:border-slate-700 hover:bg-slate-900/50 transition-all"
               >
-                <div className="flex items-start justify-between mb-3">
+                <div className="mb-3">
                   <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
                     The Crucible
                   </span>
-                  <svg
-                    className="h-4 w-4 text-slate-600 group-hover:text-slate-400 transition-colors flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                    />
-                  </svg>
                 </div>
                 <p className="text-sm text-slate-300 font-medium mb-1">
                   See the Foundry Standard your integration will meet.
@@ -376,7 +348,7 @@ export default function TransmutePage() {
                 <p className="text-xs text-slate-500">
                   The open standard for AI agent certification.
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -462,7 +434,9 @@ export default function TransmutePage() {
                 </ul>
 
                 <a
-                  href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
+                  href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm text-center py-3 transition-colors"
                 >
                   Book Discovery Sprint
@@ -599,10 +573,12 @@ export default function TransmutePage() {
               have a detailed map of your own codebase. Either way, you win.
             </p>
             <a
-              href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
+              href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 text-sm transition-colors"
             >
-              Start the Conversation
+              Book Discovery Sprint
               <svg
                 className="h-4 w-4"
                 fill="none"

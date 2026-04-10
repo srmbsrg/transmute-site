@@ -52,10 +52,8 @@ export default function FoundryFamiliarsHome() {
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* The Assay */}
-              <a
-                href="https://spookysoftwaresyndicate.com/the-assay"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/the-assay"
                 className="group rounded-xl border border-slate-800 bg-slate-900/40 p-8 hover:border-slate-700 hover:bg-slate-900/60 transition-all"
               >
                 <div className="mb-4">
@@ -70,28 +68,13 @@ export default function FoundryFamiliarsHome() {
                   Free, instant, no account.
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-xs text-blue-400 group-hover:text-blue-300 transition-colors font-medium">
-                  Run a free scan
-                  <svg
-                    className="h-3.5 w-3.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                    />
-                  </svg>
+                  Run a free scan →
                 </span>
-              </a>
+              </Link>
 
               {/* The Crucible */}
-              <a
-                href="https://spookysoftwaresyndicate.com/the-crucible"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/the-crucible"
                 className="group rounded-xl border border-slate-800 bg-slate-900/40 p-8 hover:border-slate-700 hover:bg-slate-900/60 transition-all"
               >
                 <div className="mb-4">
@@ -106,22 +89,9 @@ export default function FoundryFamiliarsHome() {
                   &nbsp;
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-xs text-blue-400 group-hover:text-blue-300 transition-colors font-medium">
-                  Learn more
-                  <svg
-                    className="h-3.5 w-3.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                    />
-                  </svg>
+                  Learn more →
                 </span>
-              </a>
+              </Link>
 
               {/* Transmute */}
               <Link
