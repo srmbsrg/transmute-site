@@ -2,21 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Transmute — AI Integration for .NET Codebases",
+  title: "Foundry Familiars — A family of tools for the AI-native enterprise",
   description:
-    "Add AI capabilities to your existing .NET codebase. No rewrite. Transmute analyzes your repo, generates a blueprint for approval, then delivers compile-verified PRs that match your patterns.",
+    "Foundry Familiars is a product family from Spooky Software Syndicate. Tools for enterprise AI readiness, certification, and .NET integration.",
   keywords: [
-    "AI integration",
-    ".NET",
-    "C#",
+    "AI tools",
     "enterprise AI",
-    "code generation",
-    "managed service",
+    "AI readiness",
+    "AI certification",
+    ".NET AI integration",
+    "Foundry Familiars",
+    "Spooky Software Syndicate",
   ],
   openGraph: {
-    title: "Transmute — AI Integration for .NET Codebases",
+    title: "Foundry Familiars — A family of tools for the AI-native enterprise",
     description:
-      "Add AI capabilities to your existing .NET codebase. No rewrite required.",
+      "Foundry Familiars is a product family from Spooky Software Syndicate.",
     type: "website",
   },
 };
