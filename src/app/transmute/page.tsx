@@ -86,7 +86,7 @@ export default function TransmutePage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:ghostfoundrysyndicate@outlook.com?subject=Discovery%20Sprint%20Inquiry&body=Hi%20Scott%2C%0A%0AI%27d%20like%20to%20book%20a%20Discovery%20Sprint%20for%20my%20.NET%20codebase.%0A%0ACompany%3A%0ACodebase%20stack%3A%0AWhat%20I%27m%20trying%20to%20add%3A"
+                href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 text-sm transition-colors"
               >
                 Book Discovery Sprint
@@ -462,7 +462,7 @@ export default function TransmutePage() {
                 </ul>
 
                 <a
-                  href="mailto:ghostfoundrysyndicate@outlook.com?subject=Discovery%20Sprint%20Inquiry&body=Hi%20Scott%2C%0A%0AI%27d%20like%20to%20book%20a%20Discovery%20Sprint%20for%20my%20.NET%20codebase.%0A%0ACompany%3A%0ACodebase%20stack%3A%0AWhat%20I%27m%20trying%20to%20add%3A"
+                  href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
                   className="block w-full rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm text-center py-3 transition-colors"
                 >
                   Book Discovery Sprint
@@ -599,7 +599,7 @@ export default function TransmutePage() {
               have a detailed map of your own codebase. Either way, you win.
             </p>
             <a
-              href="mailto:ghostfoundrysyndicate@outlook.com?subject=Discovery%20Sprint%20Inquiry&body=Hi%20Scott%2C%0A%0AI%27d%20like%20to%20book%20a%20Discovery%20Sprint%20for%20my%20.NET%20codebase.%0A%0ACompany%3A%0ACodebase%20stack%3A%0AWhat%20I%27m%20trying%20to%20add%3A"
+              href="https://buy.stripe.com/cNi9ATcQ92f74UY5HdaMU01" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 text-sm transition-colors"
             >
               Start the Conversation
