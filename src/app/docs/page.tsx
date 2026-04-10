@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Documentation — Alloy",
+  title: "Documentation — Transmute",
   description:
-    "Technical documentation for Alloy: codebase requirements, the Blueprint approval process, how compile-verified PRs are generated, and answers to common enterprise objections.",
+    "Technical documentation for Transmute: codebase requirements, the Blueprint approval process, how compile-verified PRs are generated, and answers to common enterprise objections.",
 };
 
 const sections = [
-  { id: "what-alloy-does", label: "What Alloy Does" },
+  { id: "what-transmute-does", label: "What Transmute Does" },
   { id: "codebase-requirements", label: "Codebase Requirements" },
   { id: "the-blueprint", label: "The Blueprint" },
   { id: "the-pr", label: "The PR" },
@@ -25,7 +25,7 @@ export default function DocsPage() {
             href="/"
             className="text-lg font-semibold tracking-tight text-white hover:text-slate-300 transition-colors"
           >
-            Alloy
+            Transmute
           </Link>
           <div className="flex items-center gap-6">
             <span className="text-sm text-blue-400 font-medium">Docs</span>
@@ -79,7 +79,7 @@ export default function DocsPage() {
           <div className="mb-12 pb-8 border-b border-slate-800">
             <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
               <Link href="/" className="hover:text-slate-300 transition-colors">
-                alloy
+                transmute
               </Link>
               <span>/</span>
               <span className="text-slate-400">docs</span>
@@ -88,31 +88,31 @@ export default function DocsPage() {
               Documentation
             </h1>
             <p className="text-slate-400 text-lg leading-relaxed max-w-2xl">
-              What Alloy does, what it needs from your codebase, and how the
+              What Transmute does, what it needs from your codebase, and how the
               delivery process works — with no hand-waving.
             </p>
           </div>
 
-          {/* ─── What Alloy Does ─── */}
-          <section id="what-alloy-does" className="mb-16 scroll-mt-28">
+          {/* ─── What Transmute Does ─── */}
+          <section id="what-transmute-does" className="mb-16 scroll-mt-28">
             <h2 className="text-2xl font-bold text-white mb-4">
-              What Alloy Does
+              What Transmute Does
             </h2>
             <p>
-              Alloy adds AI-powered capabilities to existing .NET codebases
+              Transmute adds AI-powered capabilities to existing .NET codebases
               without requiring a rewrite, a microservices migration, or a
               platform change.
             </p>
             <p>
               The core workflow is: <strong>analyze → blueprint →
-              approve → generate</strong>. Alloy reads your repository, maps
+              approve → generate</strong>. Transmute reads your repository, maps
               your architecture, and produces a detailed integration plan. Your
               team reviews and approves that plan. Only then does any code get
               generated — and it arrives as a pull request, not a wholesale
               replacement of your codebase.
             </p>
             <p>
-              Examples of what an Alloy integration can deliver:
+              Examples of what a Transmute integration can deliver:
             </p>
             <ul>
               <li>
@@ -136,7 +136,7 @@ export default function DocsPage() {
               </li>
             </ul>
             <p>
-              Alloy does <strong>not</strong> replace your architecture, change
+              Transmute does <strong>not</strong> replace your architecture, change
               your deployment model, introduce undisclosed dependencies, or
               generate code without your team&apos;s explicit approval.
             </p>
@@ -148,7 +148,7 @@ export default function DocsPage() {
               What Codebases Work Best
             </h2>
             <p>
-              Alloy is not a general-purpose AI code tool. It is optimized for
+              Transmute is not a general-purpose AI code tool. It is optimized for
               a specific type of .NET project. If your codebase fits the profile
               below, the integration process is predictable. If it doesn&apos;t,
               we will tell you in the discovery sprint before any further money
@@ -372,7 +372,7 @@ EF Core configuration.`}
             </h2>
             <p className="mb-8">
               These are the questions we hear most often from engineering
-              managers and CTOs evaluating whether Alloy is the right fit.
+              managers and CTOs evaluating whether Transmute is the right fit.
             </p>
 
             <div className="space-y-6">
@@ -391,7 +391,7 @@ EF Core configuration.`}
                 },
                 {
                   q: "Can this work alongside our existing AI tooling (Copilot, Cursor, etc.)?",
-                  a: "Yes. Alloy is not a developer tool — it runs once to produce a specific integration, not continuously as part of your IDE. It neither depends on nor conflicts with the AI tooling your developers are already using. The PR it generates looks like any other PR to those tools.",
+                  a: "Yes. Transmute is not a developer tool — it runs once to produce a specific integration, not continuously as part of your IDE. It neither depends on nor conflicts with the AI tooling your developers are already using. The PR it generates looks like any other PR to those tools.",
                 },
                 {
                   q: "We've heard \"AI-generated code\" before and it never compiles. How is this different?",
@@ -424,7 +424,7 @@ EF Core configuration.`}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:ghostfoundrysyndicate@outlook.com?subject=Alloy — Pre-Sprint Questions"
+                href="mailto:ghostfoundrysyndicate@outlook.com?subject=Transmute — Pre-Sprint Questions"
                 className="inline-flex items-center justify-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2.5 text-sm transition-colors"
               >
                 Ask a Question
@@ -448,10 +448,20 @@ EF Core configuration.`}
               href="/"
               className="font-semibold text-slate-400 hover:text-slate-300 transition-colors"
             >
-              Alloy
+              Transmute
             </Link>
             <span>·</span>
-            <span>Ghost Foundry Syndicate</span>
+            <span>
+              Transmute is a product of{" "}
+              <a
+                href="https://spookysoftwaresyndicate.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-300 transition-colors underline underline-offset-2"
+              >
+                Spooky Software Syndicate
+              </a>
+            </span>
           </div>
           <div className="flex items-center gap-6">
             <Link

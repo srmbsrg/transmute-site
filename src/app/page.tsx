@@ -6,9 +6,12 @@ export default function Home() {
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/60 bg-[#0a0e17]/90 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          <span className="text-lg font-semibold tracking-tight text-white">
-            Alloy
-          </span>
+          <div className="flex flex-col">
+            <span className="text-lg font-semibold tracking-tight text-white leading-tight">
+              Transmute
+            </span>
+            <span className="text-xs text-slate-500 leading-tight">A Foundry Familiars product</span>
+          </div>
           <div className="flex items-center gap-6">
             <Link
               href="/docs"
@@ -49,7 +52,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto max-w-2xl text-lg text-slate-400 leading-relaxed mb-10">
-              Alloy integrates AI into your existing .NET stack without touching
+              Transmute integrates AI into your existing .NET stack without touching
               your architecture. We analyze your repo, produce a blueprint for
               your team to review, then deliver compile-verified pull requests
               that match your patterns — not ours.
@@ -201,7 +204,7 @@ export default function Home() {
                     step: "01",
                     label: "Repo Analysis",
                     title: "We read your codebase. You don&apos;t change a line.",
-                    body: "Alloy ingests your repository — service layer, data access patterns, existing abstractions. It maps the architecture and identifies where AI capabilities can be added without structural surgery.",
+                    body: "Transmute ingests your repository — service layer, data access patterns, existing abstractions. It maps the architecture and identifies where AI capabilities can be added without structural surgery.",
                     tag: "read-only",
                   },
                   {
@@ -347,7 +350,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="mailto:ghostfoundrysyndicate@outlook.com?subject=Alloy Discovery Sprint — Managed Service"
+                  href="mailto:ghostfoundrysyndicate@outlook.com?subject=Transmute Discovery Sprint — Managed Service"
                   className="block w-full rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm text-center py-3 transition-colors"
                 >
                   Book Discovery Sprint
@@ -410,7 +413,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="mailto:ghostfoundrysyndicate@outlook.com?subject=Alloy SaaS — Early Access"
+                  href="mailto:ghostfoundrysyndicate@outlook.com?subject=Transmute SaaS — Early Access"
                   className="block w-full rounded-md border border-slate-700 bg-slate-800/50 text-slate-400 font-semibold text-sm text-center py-3 hover:text-slate-300 transition-colors"
                 >
                   Join the Waitlist
@@ -441,7 +444,7 @@ export default function Home() {
                 pattern from both sides — the SOW that takes longer than the
                 work, the proof-of-concept that can&apos;t survive contact with
                 production, the &quot;AI transformation&quot; that amounts to a
-                wrapper around a public API. Alloy is what I wish had existed
+                wrapper around a public API. Transmute is what I wish had existed
                 when I was the engineering manager being sold to. Opinionated
                 about quality. Conservative about risk. Clear about what it
                 does and doesn&apos;t do.
@@ -484,7 +487,7 @@ export default function Home() {
               have a detailed map of your own codebase. Either way, you win.
             </p>
             <a
-              href="mailto:ghostfoundrysyndicate@outlook.com?subject=Alloy Discovery Sprint"
+              href="mailto:ghostfoundrysyndicate@outlook.com?subject=Transmute Discovery Sprint"
               className="inline-flex items-center gap-2 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 text-sm transition-colors"
             >
               Start the Conversation
@@ -510,9 +513,19 @@ export default function Home() {
       <footer className="border-t border-slate-800/50 px-6 py-10">
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-slate-400">Alloy</span>
+            <span className="font-semibold text-slate-400">Transmute</span>
             <span>·</span>
-            <span>Ghost Foundry Syndicate</span>
+            <span>
+              Transmute is a product of{" "}
+              <a
+                href="https://spookysoftwaresyndicate.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-300 transition-colors underline underline-offset-2"
+              >
+                Spooky Software Syndicate
+              </a>
+            </span>
           </div>
           <div className="flex items-center gap-6">
             <Link

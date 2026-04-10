@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alloy — AI Integration for .NET Codebases",
+  title: "Transmute — AI Integration for .NET Codebases",
   description:
-    "Add AI capabilities to your existing .NET codebase. No rewrite. Alloy analyzes your repo, generates a blueprint for approval, then delivers compile-verified PRs that match your patterns.",
+    "Add AI capabilities to your existing .NET codebase. No rewrite. Transmute analyzes your repo, generates a blueprint for approval, then delivers compile-verified PRs that match your patterns.",
   keywords: [
     "AI integration",
     ".NET",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "managed service",
   ],
   openGraph: {
-    title: "Alloy — AI Integration for .NET Codebases",
+    title: "Transmute — AI Integration for .NET Codebases",
     description:
       "Add AI capabilities to your existing .NET codebase. No rewrite required.",
     type: "website",
