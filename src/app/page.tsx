@@ -50,7 +50,7 @@ export default function FoundryFamiliarsHome() {
         {/* ─── Product Cards ─── */}
         <section className="py-20 px-6 border-t border-slate-800/50">
           <div className="mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* The Assay */}
               <Link
                 href="/the-assay"
@@ -111,6 +111,27 @@ export default function FoundryFamiliarsHome() {
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-xs text-blue-400 group-hover:text-blue-300 transition-colors font-medium">
                   See how it works →
+                </span>
+              </Link>
+
+              {/* The Ward */}
+              <Link
+                href="/the-ward"
+                className="group rounded-xl border border-red-500/20 bg-slate-900/40 p-8 hover:border-red-500/40 hover:bg-slate-900/60 transition-all shadow-[0_0_30px_rgba(239,68,68,0.04)]"
+              >
+                <div className="mb-4">
+                  <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
+                    The Ward
+                  </span>
+                </div>
+                <h2 className="text-xl font-bold text-white mb-3 leading-snug group-hover:text-red-300 transition-colors">
+                  Keep agents out.
+                </h2>
+                <p className="text-sm text-slate-400 leading-relaxed mb-8">
+                  Free exposure scan. Lock down your site.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-xs text-red-400 group-hover:text-red-300 transition-colors font-medium">
+                  Run exposure scan →
                 </span>
               </Link>
             </div>

@@ -313,7 +313,7 @@ export default function TransmutePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {/* The Assay */}
               <Link
                 href="/the-assay"
@@ -347,6 +347,24 @@ export default function TransmutePage() {
                 </p>
                 <p className="text-xs text-slate-500">
                   The open standard for AI agent certification.
+                </p>
+              </Link>
+
+              {/* The Ward */}
+              <Link
+                href="/the-ward"
+                className="group rounded-xl border border-red-500/20 bg-slate-900/30 p-6 hover:border-red-500/30 hover:bg-slate-900/50 transition-all"
+              >
+                <div className="mb-3">
+                  <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">
+                    The Ward
+                  </span>
+                </div>
+                <p className="text-sm text-slate-300 font-medium mb-1">
+                  Need to lock out AI scrapers? Run a free exposure scan.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Protection for sensitive sites and proprietary data.
                 </p>
               </Link>
             </div>
