@@ -8,25 +8,19 @@ type DomainScore = {
   weight?: number;
 };
 
-type RemediationItem = {
-  priority?: string;
-  severity?: string;
-  description: string;
-  domain?: string;
-};
 
 type ScanResult = {
   url?: string;
-  score: number;
+  overallScore: number;
   grade?: string;
-  certification?: string;
+  certificationLevel?: string;
   domains?: {
-    agentAccessibility?: DomainScore;
-    agentSecurity?: DomainScore;
-    agentSafety?: DomainScore;
+    accessibility?: DomainScore;
+    security?: DomainScore;
+    safety?: DomainScore;
     [key: string]: DomainScore | undefined;
   };
-  remediationItems?: RemediationItem[];
+  topRemediation?: string[];
   error?: string;
 };
 
@@ -114,28 +108,29 @@ export default function TheAssayPage() {
     }
   }
 
-  const overallScore = result?.score ?? 0;
+  const overallScore = result?.overallScore ?? 0;
   const grade = result?.grade ?? letterGrade(overallScore);
-  const cert = result?.certification ?? certLevel(overallScore);
+  const rawCert = result?.certificationLevel ?? certLevel(overallScore);
+  const cert = rawCert.charAt(0).toUpperCase() + rawCert.slice(1).toLowerCase();
 
   const domains = [
     {
-      key: "agentAccessibility",
+      key: "accessibility",
       label: "Agent Accessibility",
       weight: "30%",
-      score: result?.domains?.agentAccessibility?.score ?? null,
+      score: result?.domains?.accessibility?.score ?? null,
     },
     {
-      key: "agentSecurity",
+      key: "security",
       label: "Agent Security",
       weight: "30%",
-      score: result?.domains?.agentSecurity?.score ?? null,
+      score: result?.domains?.security?.score ?? null,
     },
     {
-      key: "agentSafety",
+      key: "safety",
       label: "Agent Safety",
       weight: "40%",
-      score: result?.domains?.agentSafety?.score ?? null,
+      score: result?.domains?.safety?.score ?? null,
     },
   ];
 
@@ -316,37 +311,22 @@ export default function TheAssayPage() {
                 </div>
 
                 {/* Remediation items */}
-                {result.remediationItems && result.remediationItems.length > 0 && (
+                {result.topRemediation && result.topRemediation.length > 0 && (
                   <div className="px-7 py-6">
                     <p className="text-xs font-mono text-slate-500 uppercase tracking-widest mb-4">
                       Top Remediation Items
                     </p>
                     <ul className="space-y-3">
-                      {result.remediationItems.slice(0, 8).map((item, i) => {
-                        const priority =
-                          item.priority ?? item.severity ?? "medium";
-                        const isHigh =
-                          priority === "high" || priority === "critical";
-                        return (
-                          <li
-                            key={i}
-                            className="flex items-start gap-3 text-sm"
-                          >
-                            <span
-                              className={`mt-0.5 flex-shrink-0 text-xs font-mono font-bold px-1.5 py-0.5 rounded uppercase ${
-                                isHigh
-                                  ? "bg-red-900/30 text-red-400"
-                                  : "bg-amber-900/20 text-amber-500"
-                              }`}
-                            >
-                              {priority}
-                            </span>
-                            <span className="text-slate-400 leading-relaxed">
-                              {item.description}
-                            </span>
-                          </li>
-                        );
-                      })}
+                      {result.topRemediation.slice(0, 8).map((item, i) => (
+                        <li key={i} className="flex items-start gap-3 text-sm">
+                          <span className="mt-0.5 flex-shrink-0 text-xs font-mono font-bold px-1.5 py-0.5 rounded uppercase bg-amber-900/20 text-amber-500">
+                            fix
+                          </span>
+                          <span className="text-slate-400 leading-relaxed">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 )}
